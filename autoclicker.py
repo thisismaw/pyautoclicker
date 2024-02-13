@@ -20,7 +20,7 @@ def main():
         print(f"Starting auto-clicker at X: {x} Y: {y}. Press 'q' to stop.")
         while True:
             pyautogui.click(x, y)
-            time.sleep(0.01)  # Short delay to prevent CPU overuse
+            time.sleep(0.00001)  # Short delay to prevent CPU overuse
             if keyboard.is_pressed('q'):  # Check if 'q' is pressed
                 print("\nAuto-clicking stopped by 'q' key.")
                 break  # Exit the loop
